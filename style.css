@@ -771,15 +771,37 @@ background-color: var(--main-color);
         padding: 10rem 3% 2rem;
 
     }
+    .timeline-items
+    {
+        text-align: left;
+    }
+    
     .timeline-items::before
     {
         left: 7px;
-
+       
     }
-    .timeline-item:nth-child(odd),
+    .timeline-content,
+    .timeline-date
+    {
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd)
+    {
+    /* padding-left: calc(7.5% ); */
+    padding-left: 37px;
+    width: auto;
+    /* padding: auto; */
+    text-align: left;
+    }
+    /* .timeline-item:nth-child(odd)
+    {
+        padding-left: 37px;
+    } */
     .timeline-item:nth-child(even)
     {
         padding-left: 37px;
+    
     }
     .timeline-dot
     {
@@ -845,6 +867,7 @@ background-color: var(--main-color);
     {
         flex-direction: column-reverse;
         margin: 5rem 4rem;
+        text-align: center;
         
     }
     .home-content h3
@@ -865,8 +888,10 @@ background-color: var(--main-color);
     .home-img img
     {
         width: 56vw;
+        text-align: center;
         
     }
+   
     .services h2
     {
         margin-bottom: 3rem;
@@ -876,13 +901,6 @@ background-color: var(--main-color);
     {
         grid-template-columns: repeat(1,1fr);
     }
-
-
-
-
-
-
-
 
 }
 
